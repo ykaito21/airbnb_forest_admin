@@ -3,7 +3,7 @@ require 'faker'
 
 puts 'Creating 10 fake users...'
 
-10.times do
+100.times do
   user = User.create!(
     first_name: Faker::Name.unique.name,
     last_name: Faker::Name.unique.name,
