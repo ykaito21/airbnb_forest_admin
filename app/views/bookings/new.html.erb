@@ -1,0 +1,5 @@
+<%= simple_form_for(@booking) do |f| %>
+<%= f.input :checkin_on, class: "form-control" %>
+<%= f.input :checkout_on, class: "form-control" %>
+<%= f.submit "登録", class: "btn btn-ghost" %>
+<% end %>
