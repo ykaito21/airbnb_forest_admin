@@ -1,2 +1,14 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+
+<% @products.each do |product| %>
+<div class="contentful_product">
+  <h1>
+    <%= product.id %>
+    <%= product.title %>
+    <%= product %>
+    <%= link_to 'リンク', blog_path(product.id) %>
+  </h1>
+</div>
+<% end %>
